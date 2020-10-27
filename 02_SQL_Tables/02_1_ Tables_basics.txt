@@ -36,7 +36,7 @@ INSERT INTO cats(age,name) VALUES(29,"Grizabella");
 // Daten in die Tabelle schreiben(3)
 INSERT INTO cats VALUES("Rum Tum Hucker",40);
 
-// Daten in die Tabelle schreiben(4)
+// Daten in die Tabelle schreiben(4) (leer)
 INSERT INTO cats VALUES();
 
 //--> Leere Daten werden mit NULL dargestellt
@@ -50,3 +50,20 @@ CREATE TABLE cats
     name VARCHAR(20) NOT NULL,
 	age INT NOT NULL
 );
+
+// Tabelle anlegen(1)
+CREATE TABLE cats
+(
+    name VARCHAR(20) NOT NULL DEFAULT "BOO",
+	age INT NOT NULL DEFAULT 0
+);
+
+// EIngabe in Array
+INSERT INTO cats
+(name,age)
+VALUES 
+("Rum Tum Tucker", 40),
+("Alonso", 35),
+("Grizabella", 29);
+
+
