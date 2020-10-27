@@ -1,0 +1,9 @@
+//MySQL DB-Start
+mysql-ctl Start;m
+
+// MySQL DB-Stop
+mysql-ctl stop;
+
+// MySQL DB-Cli
+// Command Line Interface#
+mysql-ctl cli;
