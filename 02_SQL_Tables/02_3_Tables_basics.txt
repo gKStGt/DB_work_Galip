@@ -1,0 +1,39 @@
+CREATE TABLE cats
+(
+    name VARCHAR(20) NOT NULL DEFAULT "BOO",
+	age INT NOT NULL DEFAULT 0
+);
+
+INSERT INTO cats (name,age) VALUES ("Rum Tum Tucker", 40), ("Alonso", 35), ("Grizabella", 29);drop
+
+CREATE TABLE cats
+(
+id INT NOT NULL,
+name VARCHAR(20) NOT NULL DEFAULT "boo",
+age INT NOT NULL DEFAULT 0,
+PRIMARY KEY(id)
+);
+
+INSERT INTO cats VALUES (0, "GUS",45);
+INSERT INTO cats VALUES (1, "GUS",40);
+INSERT INTO cats VALUES (2, "Grinzabella",29);
+INSERT INTO cats VALUES (3, "Alonso",35);
+
+CREATE TABLE cats
+(
+id INT NOT NULL	 AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(20) NOT NULL DEFAULT "boo",
+age INT NOT NULL DEFAULT 0
+);
+
+INSERT INTO cats (name,age) VALUES ("GUS",45);
+INSERT INTO cats (name,age) VALUES ("GUS",40);
+INSERT INTO cats (name,age) VALUES ("Grinzabella",29);
+INSERT INTO cats (name,age) VALUES ("Alonso",35);
+INSERT INTO cats (name,age) VALUES ();
+
+delete from cats;
+
+// löscht einzelen ID´s / Zeilen
+delete from cats where ID = 7;
+
