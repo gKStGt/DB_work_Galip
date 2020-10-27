@@ -25,9 +25,28 @@ DESC cats;
 DROP TABLE cats;
 
 // Daten in die Tabelle schreiben(1)
-INSERT INTO cats(name,age) VALUES("Aloso",35);
+INSERT INTO cats(name,age) VALUES("Alonso",35);
 
 // Daten in der Tabelle anzeigen
 SELECT * FROM cats;
 
+// Daten in die Tabelle schreiben(2)
+INSERT INTO cats(age,name) VALUES(29,"Grizabella");
 
+// Daten in die Tabelle schreiben(3)
+INSERT INTO cats VALUES("Rum Tum Hucker",40);
+
+// Daten in die Tabelle schreiben(4)
+INSERT INTO cats VALUES();
+
+//--> Leere Daten werden mit NULL dargestellt
+
+// Tabelle löschen
+DROP TABLE cats;
+
+// Tabelle anlegen(1)
+CREATE TABLE cats
+(
+    name VARCHAR(20) NOT NULL,
+	age INT NOT NULL
+);
