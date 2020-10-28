@@ -10,14 +10,21 @@ DROP TABLE IF EXISTS users;
 
 CREATE TABLE users
 (
-    user_name VARCHAR(20) NOT NULL,
+    id INT NOT NULL,
+    user_name VARCHAR(20) NOT NULL PRIMARY KEY,
     firstName VARCHAR(20) NOT NULL,
     familyName VARCHAR(20) NOT NULL
 );
 
-DESC users;
+#DESC users;
 
-INSERT INTO users(user_name,firstName, familyName) VALUES("max","Max","Mütze");
+INSERT INTO users(id,user_name,firstName, familyName) VALUES(1,"max","Max","Mütze");
+INSERT INTO users(id,user_name,firstName, familyName) VALUES(2,"max01","Max","Martinelli");
+INSERT INTO users(id,user_name,firstName, familyName) VALUES(3,"77max","Max","Martinelli");
+
+SELECT * FROM users;
+
+ALTER TABLE users ADD plz INT NOT NULL DEFAULT 70376;
 
 SELECT * FROM users;
 
