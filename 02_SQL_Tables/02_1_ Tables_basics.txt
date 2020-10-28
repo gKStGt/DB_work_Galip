@@ -41,7 +41,7 @@ INSERT INTO cats VALUES();
 
 //--> Leere Daten werden mit NULL dargestellt
 
-// Tabelle lรถschen
+// Tabelle loeschen
 DROP TABLE cats;
 
 // Tabelle anlegen(1)

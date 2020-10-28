@@ -1,39 +1,42 @@
+
+// Tabelle mit ohne KEY --> Duplikate möglich
 CREATE TABLE cats
 (
-    name VARCHAR(20) NOT NULL DEFAULT "BOO",
+	name VARCHAR(20) NOT NULL DEFAULT "BOO",
 	age INT NOT NULL DEFAULT 0
 );
 
-INSERT INTO cats (name,age) VALUES ("Rum Tum Tucker", 40), ("Alonso", 35), ("Grizabella", 29);drop
+INSERT INTO cats  (name,age)  VALUES  ("Rum Tum Tugger", 40),  ("Alonzo", 35),  ("Grizabella", 29);drop 
+
+// Tabelle mit id als PRIMARY KEY --> KEINE Duplikate möglich
+// ABER: Manuelles Setzen der id erforderlich
 
 CREATE TABLE cats
 (
-id INT NOT NULL,
-name VARCHAR(20) NOT NULL DEFAULT "boo",
-age INT NOT NULL DEFAULT 0,
-PRIMARY KEY(id)
+	id INT NOT NULL,
+	name VARCHAR(20) NOT NULL DEFAULT "Boo",
+	age INT NOT NULL DEFAULT 0,
+	PRIMARY KEY (id)
 );
 
-INSERT INTO cats VALUES (0, "GUS",45);
-INSERT INTO cats VALUES (1, "GUS",40);
-INSERT INTO cats VALUES (2, "Grinzabella",29);
-INSERT INTO cats VALUES (3, "Alonso",35);
+INSERT INTO cats VALUES (0,"Gus",45);
+INSERT INTO cats VALUES (1,"Gus",40);
+INSERT INTO cats VALUES (2,"Grizabella",29);
+INSERT INTO cats VALUES (3,"Alonzo",35);
+
+// Tabelle mit AUTO INCREMENT
+// id wird automatisch inkrementieret (i++)
 
 CREATE TABLE cats
 (
-id INT NOT NULL	 AUTO_INCREMENT PRIMARY KEY,
-name VARCHAR(20) NOT NULL DEFAULT "boo",
-age INT NOT NULL DEFAULT 0
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(20) NOT NULL DEFAULT "Boo",
+	age INT NOT NULL DEFAULT 0
 );
 
-INSERT INTO cats (name,age) VALUES ("GUS",45);
-INSERT INTO cats (name,age) VALUES ("GUS",40);
-INSERT INTO cats (name,age) VALUES ("Grinzabella",29);
-INSERT INTO cats (name,age) VALUES ("Alonso",35);
-INSERT INTO cats (name,age) VALUES ();
+INSERT INTO cats (name,age) VALUES ("Gus",45);
+INSERT INTO cats (name,age) VALUES ("Gus",40);DELETE
+INSERT INTO cats (name,age) VALUES ("Grizabella",29);
+INSERT INTO cats (name,age) VALUES ("Alonzo",35);
 
-delete from cats;
-
-// löscht einzelen ID´s / Zeilen
-delete from cats where ID = 7;
 
