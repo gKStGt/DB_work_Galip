@@ -25,8 +25,8 @@ INSERT INTO users(id,user_name,firstName, familyName) VALUES(3,"77max","Max","Ma
 SELECT * FROM users;
 
 ALTER TABLE users ADD plz INT NOT NULL DEFAULT 70376;
-ALTER TABLE users ADD user_mail VARCHAR(20) NOT NULL;
-ALTER TABLE users ADD user_pw VARCHAR(20) NOT NUll;
+ALTER TABLE users ADD user_mail VARCHAR(40) NOT NULL DEFAULT "'@'host.de";
+ALTER TABLE users ADD user_pw INT NOT NULL DEFAULT 12345;
 
 SELECT * FROM users;
 
