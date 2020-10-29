@@ -1,6 +1,7 @@
 /* Tabelle mit user-Daten */
 
 system clear;
+use work;
 
 /* Bedingtes Löschen*/
 DROP TABLE IF EXISTS users;
