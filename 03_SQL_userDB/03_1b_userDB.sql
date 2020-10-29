@@ -26,8 +26,14 @@ VALUES
 
 ALTER TABLE users ADD plz INT(5) NOT NULL DEFAULT 12345;
 
-DESC users;
+#DESC users;
+#SELECT * FROM users;
+UPDATE users SET plz="70376" WHERE id=1;
+UPDATE users SET plz="70374" WHERE id=2;
+UPDATE users SET plz="70372" WHERE id=3;
+
 SELECT * FROM users;
+SELECT user_name,user_mail,first_name,family_name,plz FROM users;
 
 
 /*

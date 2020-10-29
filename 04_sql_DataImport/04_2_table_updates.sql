@@ -24,7 +24,7 @@ SELECT name,age FROM cats WHERE id=1;
 SELECT name "Namen",fur_color "Fellfarbe" FROM cats WHERE fur_color="red";
 SELECT name "Name",age "Alter" FROM cats WHERE age >=40;
 
-/* DELETE */
+/* DELETE - Vorsicht */
 
 DELETE FROM cats WHERE id=1;
 DELETE FROM cats WHERE age >=40;
