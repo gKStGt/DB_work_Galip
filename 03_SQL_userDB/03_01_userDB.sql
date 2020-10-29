@@ -3,6 +3,8 @@
 /* unbedingtes löschen */
 /*DROP TABLE users;*/
 
+use work;
+
 system clear;
 
 /* bedingtes löschen */
@@ -20,12 +22,12 @@ CREATE TABLE users
 
 INSERT INTO users(id,user_name,firstName, familyName) VALUES(1,"max","Max","Mütze");
 INSERT INTO users(id,user_name,firstName, familyName) VALUES(2,"max01","Max","Martinelli");
-INSERT INTO users(id,user_name,firstName, familyName) VALUES(3,"77max","Max","Martinelli");
+INSERT INTO users(id,user_name,firstName, familyName) VALUES(3,"max77","Max","Martinelli");
 
 SELECT * FROM users;
 
 ALTER TABLE users ADD plz INT NOT NULL DEFAULT 70376;
-ALTER TABLE users ADD user_mail VARCHAR(40) NOT NULL DEFAULT "@host.de";
+ALTER TABLE users ADD user_mail VARCHAR(20) NOT NULL DEFAULT "@host.de";
 ALTER TABLE users ADD user_pw INT NOT NULL DEFAULT 12345;
 
 SELECT * FROM users;

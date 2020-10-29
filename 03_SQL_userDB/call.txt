@@ -1,5 +1,8 @@
 // CAll für *sql-Datei  (Script) 
 
 mysql-ctl cli;
+use work;
 
 source 03_SQL_userDB/03_01_userDB.sql;
+source 03_SQL_userDB/03_01a_userDB.sql;
+source 03_SQL_userDB/03_01b_userDB.sql;
