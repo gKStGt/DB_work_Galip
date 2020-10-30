@@ -1,0 +1,4 @@
+// CAll für *sql-Datei  (Script) 
+
+mysql-ctl cli;
+use work;
