@@ -20,7 +20,7 @@ CREATE TABLE cats
 #DESC cats;
 
 /* Parsen & Einlesen der Daten */
-LOAD DATA LOCAL INFILE "04_sql_DataImport/cats_export.csv"
+LOAD DATA LOCAL INFILE "04_sql_DataImport/data/cats_export.csv"
 INTO TABLE cats
 FIELDS TERMINATED BY ';'
 LINES TERMINATED BY '\n'

@@ -2,6 +2,8 @@
 
 system clear:
 
+use work; 
+
 SELECT * FROM cats;
 
 /* Eingrenzen/Filtern durch WHERE */
